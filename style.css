@@ -1,26 +1,35 @@
 * { margin: 0px; padding: 0px; }
 html { scroll-behavior: smooth }
+body { background-color: white !important; }
 
-h1 { font-size:50px }
-h2 { font-size:35px }
-h3 { font-size:20px }
-h4 { font-size:16px }
-h5 { font-size:14px }
-h6 { font-size:12px }
-p { font-size:12px }
+h1 { font-size:40px !important; }
+h2 { font-size:32px !important; }
+h3 { font-size:28px !important; }
+h4 { font-size:24px !important; }
+h5 { font-size:20px !important; }
+h6 { font-size:18px !important; }
+
+/* Breakpoint for tablet */
+@media (max-width: 768px) {
+    h1 { font-size:37px !important; }
+    h2 { font-size:29px !important; }
+    h3 { font-size:25px !important; }
+    h4 { font-size:21px !important; }
+    h5 { font-size:19px !important; }
+}
 
 .a {
-    color: #fff;
+    color: #fff !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    margin-top: 25%;
+    text-align: center !important;
+    margin-top: 25% !important;
 }
 
 h1,h2,h3,h4,h5,h6 {
-    padding:0 0 0 0;
-    margin:0 0 0 0;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
 
 }
 
