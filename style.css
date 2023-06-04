@@ -1,6 +1,14 @@
 * { margin: 0px; padding: 0px; }
 html { scroll-behavior: smooth }
-body { background-color: white !important; }
+body {
+    background: #6c8eef !important;
+    overflow-x: hidden;
+    min-height: 100vh;
+    /* If you want to change the site height you can remove overflow-y */
+    /* pureSnow will automatically detect height of body tag */
+    overflow-y: hidden;
+    color: white;
+  }
 
 h1 { font-size:40px !important; }
 h2 { font-size:32px !important; }
@@ -44,3 +52,18 @@ h6 { font-size:18px !important; }
     width:100%;
     color:#fff;
 }
+
+#snow {
+    position: absolute;
+    top: 0;
+}
+
+.snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(white, white);
+    /* Workaround for Chromium's selective color inversion */
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px white);
+  }
