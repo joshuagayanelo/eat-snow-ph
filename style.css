@@ -1,12 +1,13 @@
-* { margin: 0px; padding: 0px; }
+* { margin: 0; padding: 0; }
 html { scroll-behavior: smooth }
 body {
     background: #6c8eef !important;
-    overflow-x: hidden;
+    /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
+    overflow-x: hidden !important;
     min-height: 100vh;
     /* If you want to change the site height you can remove overflow-y */
     /* pureSnow will automatically detect height of body tag */
-    overflow-y: hidden;
+    overflow-y: hidden !important;
     color: white;
   }
 
@@ -33,6 +34,8 @@ h6 { font-size:18px !important; }
     justify-content: center;
     text-align: center !important;
     margin-top: 25% !important;
+    overflow-x: hidden;
+    width: 100% !important;
 }
 
 .a div p {
@@ -56,12 +59,13 @@ h6 { font-size:18px !important; }
 #snow {
     position: absolute;
     top: 0;
+    width: 100%;
 }
 
 .snowflake {
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     background: linear-gradient(white, white);
     /* Workaround for Chromium's selective color inversion */
     border-radius: 50%;
