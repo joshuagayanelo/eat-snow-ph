@@ -1,10 +1,33 @@
-* { margin: 0; padding: 0; }
-html { scroll-behavior: smooth;}
+* { 
+    margin: 0;
+    padding: 0; 
+}
+
+html { 
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'PalmCanyonDrive';
+    src: url('./assets/fonts/Palm-canyon-drive/palm-canyon-drive-regular.woff2');
+  }
+
+@font-face {
+    font-family: 'JosefinSans';
+    src: url('./assets/fonts/Josefin-sans/JosefinSans-VariableFont_wght.ttf');
+  }
+
+@font-face {
+    font-family: 'PointBlank';
+    src: url('./assets/fonts/PointBlank.ttf');
+  }
+
+
 body {
-    background: #6c8eef !important;
+    background: #6A8EEB !important;
     /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
     overflow-x: hidden !important;
-    min-height: 100vh;
+    min-height: 1200px !important;
     width: 100%;
     /* If you want to change the site height you can remove overflow-y */
     /* pureSnow will automatically detect height of body tag */
@@ -12,37 +35,34 @@ body {
     color: white;
   }
 
-h1 { font-size:40px !important; }
+h1 { font-size:80px !important; }
 h2 { font-size:32px !important; }
-h3 { font-size:28px !important; }
-h4 { font-size:24px !important; }
-h5 { font-size:20px !important; }
-h6 { font-size:18px !important; }
+h3 { font-size:22px !important; }
+h4 { font-size:18px !important; }
+h5 { font-size:16px !important; }
+h6 { font-size:14px !important; }
 
 /* Breakpoint for tablet */
 @media (max-width: 768px) {
-    h1 { font-size:37px !important; }
+    h1 { font-size:50px !important; }
     h2 { font-size:29px !important; }
-    h3 { font-size:25px !important; }
-    h4 { font-size:21px !important; }
-    h5 { font-size:19px !important; }
+    h3 { font-size:19px !important; }
+    h4 { font-size:17px !important; }
+
+    /* Adjustments */
+    .block-2 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
 }
 
-.header, .footer {
+/* .header, .footer {
     width: 100% !important;
 }
 
-.a {
-    color: #fff !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center !important;
-    margin-top: 25% !important;
-}
-
-.a div p {
-    margin-bottom:0;
+.header {
+    display:none;
 }
 
 .header {
@@ -51,12 +71,101 @@ h6 { font-size:18px !important; }
     width: 100%;
     color:#fff;
 }
-
+   
 .footer {
     position:fixed;
     bottom:0;
     width:100%;
     color:#fff;
+    display: none;
+} */
+
+.main {
+    display:flex column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.logo {
+    margin-bottom:50px;
+}
+
+.block-1 {
+    margin: 0 0 70px 0;
+}
+
+.block-2 {
+    margin-bottom: 50px;
+}
+
+.block-3 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.block-1 h1 {
+    font-family:'PalmCanyonDrive' !important;
+    letter-spacing: 0px;
+    line-height: .9;
+    color: #FFFFFF;
+    opacity: 1;
+    transform: rotate(-4deg) 
+            skew(-4deg);
+}
+
+.block-2 h3 {
+    font-family: 'JosefinSans';
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.b3-container {
+    max-width:1200px;
+    height: 100%;
+    background:#F2F7FF !important;
+    border-radius: 50px;
+    margin-top: 3%;
+    padding: 20px 50px 30px 50px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap; */
+}
+
+.b3-content {
+    font-family: 'JosefinSans';
+    color: #A684D6;
+    letter-spacing: 0px;
+    margin-top:40px;
+    padding:0 10px 10px 10px;
+    max-width:300px;
+    text-align: center;
+}
+
+.snow-month-icon {
+    background-image: url("./assets/images/snow.svg") !important;
+    background-repeat: no-repeat;
+    width:120px;
+    height:120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top:30px;
+}
+
+.snow-month-icon h3 {
+   font-family: 'PointBlank';
+   color: #C3B905;
+   font-size: 25px !important;
+   text-transform: uppercase;
+   margin-top:10px !important
 }
 
 #snow {
@@ -74,3 +183,4 @@ h6 { font-size:18px !important; }
     border-radius: 50%;
     filter: drop-shadow(0 0 10px white);
   }
+
