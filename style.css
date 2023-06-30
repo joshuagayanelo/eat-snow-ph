@@ -1,6 +1,7 @@
 * { 
     margin: 0;
     padding: 0; 
+    overflow: hidden;
 }
 
 html { 
@@ -28,7 +29,7 @@ body {
     /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
     overflow-x: hidden !important;
     min-height: 1200px !important;
-    width: 100%;
+    width: 100% !important;
     /* If you want to change the site height you can remove overflow-y */
     /* pureSnow will automatically detect height of body tag */
     /* overflow-y: hidden !important; */
@@ -131,11 +132,8 @@ h6 { font-size:14px !important; }
     border-radius: 50px;
     margin-top: 3%;
     padding: 20px 50px 30px 50px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap; */
+    margin-left:10px;
+    margin-right:10px;
 }
 
 .b3-content {
